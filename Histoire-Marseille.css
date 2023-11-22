@@ -1,0 +1,117 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    margin-right: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin-bottom: 10%;
+}
+.retour-accueil {
+    position: fixed; /* Position fixe pour le maintenir en haut de la page */
+    top: 20px; /* Ajustez la valeur pour positionner verticalement */
+    left: 20px; /* Ajustez la valeur pour positionner horizontalement */
+    font-size: 24px; /* Taille de la police du symbole "<" */
+    color: rgb(255, 255, 255); /* Couleur du symbole */
+    text-decoration: none; /* Supprime les soulignements par défaut */
+    z-index: 9999; /* Assurez-vous qu'il est au-dessus du contenu */
+}
+
+.retour-accueil:hover{
+
+    background: rgb(0, 145, 255);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+.retour-accueil::before {
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 50%;
+    background-color: rgb(99, 99, 99);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s ease-out;
+    opacity: 0.2;
+}
+
+.retour-accueil:hover::before {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0.1;
+}
+
+header{
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.485) 0%, rgba(0, 0, 0, 0.425) 100%), url('image-Marseille/image1.jpg');
+    padding: 30%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container i,h2, h3,h4, hr{
+    margin-left: 3%;
+}
+
+
+i {
+    margin-left: 3%;
+    font-size: 3em;
+}
+
+h1{
+    margin-left: 3%;
+    background: linear-gradient(10deg, #ffffff 100%, #000000 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 0 1px 2px #ffffff;
+}
+
+h2{
+
+    color: rgb(0, 0, 0);
+
+}
+
+h3{
+    color:#0095FF ;
+    font-style: italic;
+}
+
+h4{
+
+     font-size: 2.2em;
+}
+h6{
+    font-size: 1em;
+}
+p {
+    color: #3d3d3d;
+    font-size: 1.1em;
+   margin-left: 3%;
+    font-weight: bold;
+}
+
+img {
+    width: 50%;
+    height: 20em;
+    margin-left: 3%;
+
+}
+
+.histoire {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(8, 109, 177);
+    transition: transform 0.3s;
+    margin-top: -10%;
+}
+

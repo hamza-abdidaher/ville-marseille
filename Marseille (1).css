@@ -1,0 +1,551 @@
+body {
+    margin: 0;
+    padding: 0;
+    margin-right: 0;
+    font-family: 'Times New Roman', serif;
+    background-color: #f4f4f4;
+}
+button {
+    background-color:rgb(0, 82, 158);
+    color: white;
+    border: none;
+    padding: 30px 40px;
+    cursor: pointer;
+    margin-top: 0px;
+    top: 15%;
+    margin-left: -1%;
+    margin-top: -1%;
+    font-weight: bold;
+
+}
+
+.menucomplet{
+    background: white;
+    display: flex;
+
+}
+
+.menu {
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    margin-top: -2.2%;
+    margin: 10px;
+}
+button:hover + .menu {
+    max-height: 100px; /* Ajustez cette valeur selon la hauteur de votre menu */
+    transition: max-height 0.3s ease-in-out;
+    text-align: center;
+}
+
+.menu li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    margin: 22.5px;
+    min-width: 120px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+a:hover, button:hover input:hover {
+    background: #000000;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.menucomplet:hover .menu {
+    max-height: 100px;
+    transition: max-height 0.3s ease-in-out;
+    text-align: center;
+}
+
+/* Positionner le champ de recherche */
+
+
+
+
+
+
+
+
+h1{
+    margin-left: 10%;
+    background: linear-gradient(45deg, rgb(0, 115, 255) 0%, rgb(0, 0, 0) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+   
+}
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    flex-wrap: wrap;
+    background: white;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.main-content img {
+    width: 30em;
+    height: 20em;
+    margin-bottom: 20px;
+}
+
+.case1 {
+    flex: 1;
+    text-align: center;
+    color: #333;
+    text-align: left;
+    margin-left: 2%;
+}
+
+.case1 h3 {
+    color: #ff8c00; /* Votre couleur */
+}
+
+.case1 p {
+    color: #666;
+    margin-left: 0;
+}
+
+
+
+
+.case2 {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Crée 4 colonnes égales */
+    gap: 10px; ;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.case-item {
+    flex: 0 0 calc(33.33% - 10px); /* Largeur de 33.33% moins les marges */
+    margin-bottom: 20px;
+    background: white;
+    padding-bottom: 10%;
+  
+}
+
+.case-item img {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+
+   
+}
+
+.case-item h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #00857a;
+    margin-left: 3%;
+}
+
+.case-item p {
+    color: #000000;
+    margin-left: 3%;
+}
+
+
+
+
+
+.case3 {
+    text-align: left;
+    margin-left: 10%;
+    background: linear-gradient(45deg, #000000 10%,  #1c4cac 100%);
+    padding-bottom: 1px;
+    width: 30%;
+   
+}
+
+.case3 h4 {
+    margin-top: 10%;
+    font-size: 3vw;
+    background: linear-gradient(45deg, rgb(147, 1, 1) 30%, rgb(255, 255, 255) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-left: 7%;
+    padding-top: 10%;
+}
+
+.event {
+    margin-top: -5%;
+    margin-bottom: 30%;
+    color: white;
+    margin-left: 7%;
+}
+
+.event img, p{
+    width: 80%;
+    
+}
+.event p{
+    margin-left: 0;
+}
+details {
+    margin-bottom: 1em;
+    margin-right: 4%;
+   
+}
+details a {
+    text-decoration: none;
+    color: White;
+   }
+details a:hover{
+    background: rgb(0, 145, 255);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+   }
+summary {
+    background: rgba(0, 100, 176, 0.229);
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    
+}
+   
+summary:hover {
+background-color: rgba(0, 110, 255, 0.41);
+
+}
+   
+details[open] summary:after {
+    content: "\2212";
+    
+}
+   
+details summary::-webkit-details-marker {
+display:none ;
+
+}
+
+
+
+
+
+.case4 {
+    background: linear-gradient(45deg, #000000 0%, #1c4cac 100%);;
+    padding: 10px;
+    text-align: center;
+    width: 40%;
+    margin-left: 45%;
+    height: 40em;
+    margin-top: -64%;
+
+}
+
+.case4 h6{
+    margin-top: 2%;
+    color: white;
+    font-size: 3em;
+   text-align: left;
+   margin-left: 5%;
+}
+
+.case4 p{
+    margin-top: -5%;
+    color: white;
+    font-size: 2em;
+    text-align: left;
+    margin-left: 5%
+    
+}
+
+
+.case5 {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.899) 0%, rgba(0, 50, 150, 0.893) 100%), url('image-Marseille/carte.jpg');
+    background-size: cover;
+    padding: 15%;
+    background-position: center;
+    color: #ffffff;
+    margin-top: 30%;
+    
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%); /* Ajustez la valeur Y pour positionner l'icône */
+    color: #ffffff;
+    top: 20%;
+}
+
+.overlay i {
+    font-size: 2em;
+}
+
+.case5 h6 {
+    font-size: 2.5em;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -30%); /* Ajustez la valeur Y pour positionner le titre */
+}
+
+
+
+
+
+.case6-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 0 20px;
+    text-align: center;
+    margin: 20px 0;
+  
+}
+
+.case6 {
+    padding: 10px;
+    border: 1px solid #f7f1f1;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    
+    
+}
+.case6 h2,p {
+    margin-left: 5%;
+}
+
+.case6 a img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.case6 img {
+    width: 80%;
+    height: auto;
+    margin-left: 5%;
+}
+
+
+.case7 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f7f1f1;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+  
+    
+}
+
+.case7 h2 {
+    margin-top: 5%;
+    margin-left: 5%; /* Pour supprimer le margin-top par défaut */
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    /* Espacement entre le titre et les liens */
+}
+
+.links a {
+    margin-left: 5%;
+    text-decoration: none;
+    position: relative;
+    color: #000; /* Couleur du texte */
+    transition: color 0.3s ease-in-out;
+    font-weight: bold; /* Transition de couleur */
+}
+
+/* Effet de soulignement */
+.links a::before,
+.links a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(0, 132, 255); /* Couleur du soulignement */
+    transition: width 0.3s ease-in-out; /* Transition de largeur */
+}
+
+/* Animation au survol */
+.links a:hover::before {
+    width: 12%;
+}
+
+/* Animation de changement de couleur au survol */
+.links a:hover {
+    color: rgb(0, 106, 255); 
+    font-weight: bold;/* Couleur du texte au survol */
+}
+
+.image-container {
+    margin-top: 10px;
+    margin-left: 20%;
+    width: 80%; /* Espacement entre les liens et l'image */
+}
+
+
+
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.959) 0%, rgba(0, 50, 150, 0.943) 100%), url('image-Marseille/logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 5%;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    text-align: center;
+}
+.col-md-12  i{
+    color: white;
+    font-size: 1.5em;
+    margin: 5px;
+    text-align: center;
+}
+
+
+.col-md-12 i:hover{
+    background: rgb(0, 145, 255);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.col-md-12 {
+    flex: 1 1 100%; /* Chaque colonne occupe 100% de l'espace */
+    max-width: 100%;
+
+     /* Espace entre les rangées */
+}
+
+.col-md-4 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+ /* Pour aligner verticalement le contenu */
+   
+}
+
+.col-md-4 a {
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 15px;
+     /* Espacement entre les liens */
+}
+
+.col-md-4 a:hover {
+
+ background: rgb(0, 145, 255);
+ -webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+}
+
